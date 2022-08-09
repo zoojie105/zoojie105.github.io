@@ -5,10 +5,232 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jihye Ju</title>
-    <link rel="shortcut icon" type="images/x-icon" href="favicon.ico">
+    <title>JIHYE JU</title>
+  <link rel="shortcut icon" type="images/x-icon" href="favicon.ico">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
-<h1>주지혜의 포트폴리오 페이지 TEST</h1>
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo"><img src="images/logo.png" alt="" class="img-fluid"></a>
+    
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link  scrollto" href="#project">Project</a></li>
+              <li><a class="nav-link  scrollto" href="#skills">Skills</a></li>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+    
+        </div>
+      </header>
+    
+      <div id="hero" class="home">
+    
+        <div class="container">
+          <div class="hero-content">
+            <h1><span class="typed" data-typed-items="안녕하세요, 개발자 주지혜 입니다."></span></h1>
+            <p>Back-End Developer, Front-End Developer</p>
+    
+            <ul class="list-unstyled list-social">
+              <li><a href="https://github.com/zoojie105" target="blank"><i class="bi bi-github"></i></a></li>
+              <li><a href="tel:01093068456"><i class="bi bi-telephone-fill"></i></a></li>
+              <li><a href="mailto:zoojie105@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <main id="main">
+    
+        <div id="about" class="paddsection">
+          <div class="container">
+            <div class="row justify-content-between">
+    
+              <div class="col-lg-4 ">
+                <div class="div-img-bg">
+                  <div class="about-img">
+                    <img src="images/profile.JPG" class="img-responsive" alt="me">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-7">
+                <div class="about-descr">
+    
+                  <h2>About <span>Me</span></h2>
+                  <p class="p-heading">안녕하세요.<br>코딩이 즐거운 행복한 개발자입니다.<br/>저는 현재 웹개발을 하고 있으며, 주로 PHP 기반 백엔드 프레임워크를 다루고 있습니다.<br/> 이곳은 저를 소개하는 동시에 저의 개발 성장일지를 기록하는 공간이며,<br/>저에게 문의할 사항이 있으면 언제든 연락주셔도 좋습니다!<br/>감사합니다!😄</p>
+                  
+                  <div class="separator">
+                    <ul class="about_info">
+                      <li><span>Name</span> 주지혜 Jihye Ju</li>
+                      <li><span>Birth</span> 1997.01.05</li>
+                      <li><span>Address</span> Yongin-si, Gyeonggi-do</li>
+                      <li><span>E-mail</span> zoojie105@gmail.com</li>
+                      <li><span>Mobile</span> +82 10 9306 8456</li>
+                    </ul>
+                  </div>
+
+                  <div class="separator">
+                  <h3>Experience</h3>
+                    <ul class="experience">
+                      <li><span class="strong">2021.10 ~ ing</span></li>
+                      <li>Siliconii (실리콘투)</li>
+                      <li><span class="position"> Web Developer</span></li>
+                    </ul>
+                  </div>
+
+
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- ======= project Section ======= -->
+        <div id="project" class="paddsection">
+    
+          <div class="container">
+            <div class="section-title text-center">
+              <h2>My Project</h2>
+            </div>
+          </div>
+    
+          <div class="container">
+    
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="project-flters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-web">WEB</li>
+                  <li data-filter=".filter-mobile">Mobile</li>
+                  <li data-filter=".filter-design">Design</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="row project-container">
+    
+              <div class="col-lg-4 col-md-6 project-item filter-web">
+                <img src="images/web1.JPG" class="img-fluid" alt="">
+                <div class="project-info">
+                  <h4>Hollys Coffee</h4>
+                  <p>Hollys Coffee Web site renewal</p>
+                  <a href="hollys_details.html" class="preview-link" title="More Details"><i class="bi bi-plus"></i></a>
+                  <a href="https://github.com/zoojie105/hollys-web-renewal" target="blank" class="details-link" title="go to github"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 project-item filter-mobile">
+                <img src="images/coming1.jpg" class="img-fluid" alt="">
+                <div class="project-info">
+                  <h4>Coming soon</h4>
+                  <a href="#none" class="preview-link" title="More Details"><i class="bi bi-plus"></i></a>
+                  <a href="#none" target="blank" class="details-link" title="go to github"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 project-item filter-design">
+                <img src="images/coming2.jpg" class="img-fluid" alt="">
+                <div class="project-info">
+                  <h4>Coming soon</h4>
+                  <a href="#none" class="preview-link" title="More Details"><i class="bi bi-plus"></i></a>
+                  <a href="#none" target="blank" class="details-link" title="go to github"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div id="skills" class="text-left paddsection">
+    
+          <div class="container">
+            <div class="section-title text-center">
+              <h2>skills</h2>
+            </div>
+          </div>
+    
+          <div class="container">
+            <div class="skills-block">
+              <div class="row">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>jQuery</p>
+                <p>PHP</p>
+                <p>Laravel</p>
+                <p>Maria DB</p>
+                <p>Mysql</p>
+              </div>
+            </div>
+          </div>
+    
+        </div><!-- End skills Section -->
+    
+    
+      <!-- ======= Footer ======= -->
+      <div id="footer" class="text-center">
+        <div class="container">
+          <div class="socials-media text-center">
+    
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+    
+          </div>
+    
+          <p>&copy; Copyrights Folio. All rights reserved.</p>
+    
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+    
+        </div>
+      </div><!-- End Footer -->
+    
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+      <!-- Vendor JS Files -->
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="vendor/php-email-form/validate.js"></script>
+      <script src="vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="vendor/typed.js/typed.min.js"></script>
+    
+      <!-- Template Main JS File -->
+      <script src="js/main.js"></script>
 </body>
 </html>

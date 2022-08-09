@@ -1,0 +1,63 @@
+h1, h2, h3, div, p ,ul, li, dl, dt, dd{
+    margin:0; padding:0
+}
+
+h2 {
+    color: #292929;
+    font-weight: 600;
+  }
+
+a{
+    text-decoration:none !important; 
+    color:#292929;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+a:hover {
+    transition: all 0.5s ease-in-out 0s;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #999999;
+    line-height: 28px;
+}
+  
+ul, li{
+    list-style:none
+}
+
+address{
+    font-style:normal
+}
+
+body{
+    color: #898989; 
+    font-size:15px; 
+    font-family:"나눔고딕","맑은고딕","돋움";
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.blind{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
+
+::-moz-selection {
+    background: #b8a07e;
+    color: #fff;
+  }
+::selection {
+    background: #b8a07e;
+    color: #fff;
+  }
+
+*{
+    box-sizing: border-box;
+}
