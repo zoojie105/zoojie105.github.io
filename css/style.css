@@ -1,0 +1,309 @@
+/*
+#=========================================#
+| CSS Reset                               |
+#=========================================#
+*/
+
+body, h1, h2, h3, div, p ,ul, li, dl, dt, dd{margin:0; padding:0}
+a{text-decoration:none; color:black}
+ul, li{list-style:none}
+address{font-style:normal}
+body{font-size:18px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";; line-height:1.5}
+.blind{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
+fieldset, button{margin:0; padding:0; border:0}
+
+/*
+#=========================================#
+| index.html                              |
+#=========================================#
+*/
+
+body {
+    /* max-width: 1000px; */
+    margin: auto;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    word-break: keep-all;
+}
+#header{
+    padding-left:5%;
+}
+#h1{
+    display: none;
+}
+#logo{
+    display: none;
+}
+#nav {
+    position: fixed;
+    top: 40%;
+    font-size: 1.3rem;
+}
+#nav a:hover, #nav .active, #nav .active:focus, #nav li:hover > a {
+    color: #b8a07e;
+}
+h1, #home h2{
+    font-size: 4rem;
+    font-family: 'Satisfy', cursive;
+}
+.content-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#header{
+    width: 10%;
+}
+#header_inner{
+    width: 90%;
+}
+.main{
+    width: 80%;
+    
+}
+#home{
+    height:100vh;
+    text-align: center;
+}
+.home-inner{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40vh;
+    width: 80%;
+}
+#contents{
+    padding: 0 5%;
+    font-size: 1rem;
+}
+.content, .profile{
+    padding-top: 100px;
+}
+.content:last-child{
+    padding-bottom: 100px;
+}
+
+.icon{
+    width: 35px;
+    margin-right: 20px;
+}
+.title{
+    display: flex;
+}
+.line{
+    border-bottom: solid 1px #b3b1af42;
+    margin: 10px 0 30px 0;
+}
+/*------------- profile --------------*/
+.profile{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image {
+    width: 30%;
+}
+.image img{
+    border-radius: 10px;
+    max-width: 300px;
+}
+.info{
+    width: 65%;
+}
+.info_personal span{
+    background: #efab4829;
+}
+.info > p{
+    margin-top: 20px;
+}
+.info p span{
+    font-weight: bold;
+}
+.info2{
+    margin-top:20px
+}
+.info2 li{
+    display: flex;
+    align-items: center;
+}
+.info2 img{
+    margin-right: 5px;
+}
+.experience{
+    padding-top: 50px;
+}
+
+/*------------- Stacks --------------*/
+.stacks-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#stacks dl{
+    width: 20%;
+}
+#stacks dt{
+    font-weight: bold;
+}
+
+dd::before {
+    content: "- ";
+}
+
+
+/*------------- project --------------*/
+.project{
+    margin: 50px 0;
+    display: flex;
+}
+.border{
+    border-bottom: 1px solid #b3b1af42;
+    margin: 30px 0;
+}
+.project_img{
+    max-width: 350px;
+}
+.project_inner{
+    margin-left: 50px;
+    line-height: 30px
+}
+.project_inner span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.project_inner a{
+    font-size: 0.8rem;
+    color: #787878;
+}
+.project_inner a:hover{
+    text-decoration-line: underline;
+}
+
+/*------------- @media --------------*/
+
+@media (max-width: 750px) {
+
+    body{
+        font-size: 16px;
+    }
+    #logo{
+        font-size: 2rem;
+        display: block;
+    }
+    #header{
+        padding: 10px 5%;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        box-shadow: 10px 5px 5px #eee;
+    }
+    #nav{
+        position: unset;
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+    #nav li{
+        margin-left: 30px;
+    }
+    #header_inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content-wrap{
+        display: unset;
+    }
+    .main{
+        width: 100%;
+    }
+    .home-inner{
+        width: 100%;
+    }
+    .project_img{
+        width: 250px;
+    }
+    .info{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #logo {
+        font-size: 1.5rem;
+    }
+    #nav{
+        font-size: 1rem;
+    }
+    #nav li {
+        margin-left: 10px;
+    }
+    .content {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .profile {
+        flex-direction: column;
+        padding-top:0;
+    }
+    .image {
+        min-width: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .info{
+        width: auto;
+    }
+    .info_personal{
+        width: 220px;
+        margin: auto;
+    }
+    .info_personal li{
+        margin: 5px 0;
+    }
+    .info > p{
+        text-align: center;
+    }
+
+    .experience > P .strong{
+        display: block;
+    }
+
+    .stacks-inner{
+        flex-direction: column;
+        width: 270px;
+        margin: auto;
+    }
+    #stacks dl {
+        display: flex;
+        width: auto;
+        line-height: 25px;
+        margin: 10px 0;
+    }
+    #stacks dt {
+        width: 100px;
+    }
+
+    .project{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 270px;
+        margin: auto;
+    }
+    .project_inner {
+        margin-left: 0;
+    }
+
+}
+@media (max-width: 380px) {
+
+}
