@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jihye Ju</title>
+    <link rel="shortcut icon" type="images/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Gothic&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="./images/profile2.JPG" />
+    <link rel="shortcut icon" href="./images/profile2.JPG" />
+
+</head>
+<body>
+<div class="content-wrap">
+    <div id="header">
+        <div id="header_inner">
+            <h1 id="logo"><a href="/">Jihye Ju</a> </h1>
+            <ul id="nav">
+                <li class='content-list home_nav'><a class='scrollto' href='./index.html#home'>Home</a></li>
+                <li class='content-list profile_nav'><a class='scrollto' href='./index.html#profile'>Profile</a></li>
+                <li class='content-list stacks_nav'><a class='scrollto' href='./index.html#stacks'>Stacks</a></li>
+                <li class='content-list project_nav'><a class='scrollto active' href='./index.html#project'>Project</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="project_content">
+        <div class="project_title">
+            <div class="project_title_inner1">
+                <img src="images/paypal_logo.png">
+                <h2>PayPal 간편결제</h2>
+            </div>
+            <div class="project_title_inner2">
+                <p>PayPal 간편결제 및 스마트버튼 연동 개발</p>
+                <p>작업기간: 2022.07 ~ 2022.10</p>
+            </div>
+        </div>
+
+        <div class="project_img">
+            <div><img src="./images/paypal_smart_btn.jpg" width="100%"/></div>
+            <div><img src="./images/paypal_vault_btn.jpg" width="100%"/></div>
+        </div>
+
+        <div class="description">
+        <p>사용자에게 보다 안전하고 효율적인 결제시스템을 제공하기 위해 페이팔 스마트 버튼 및 간편결제 API를 웹사이트에 연동</p>
+        <p>페이팔 간편결제 및 스마트버튼 연동을 통해 사용자가 원하는 결제방식을 선택할 수 있도록 구현</p>
+        </div>
+
+        <div class="skill">
+            <h3>기술 개요 및 구현 방식</h3>
+            <ul>
+                <li>PayPal SDK를 사용해 백엔드 시스템을 개발하고, REST API를 설계하고 구현</li>
+                <li><span>JavaScript & jQuery</span>
+                    <ul>
+                        <li>프론트엔드에서 주문 데이터의 검증 및 처리를 위해 JavaScript와 jQuery를 사용</li>
+                        <li>결제 전 주문 데이터의 유효성을 검증하고, 유효하지 않은 경우 사용자에게 적절한 피드백을 제공하여 UX를 향상</li>
+                        <li>jQuery를 통해 사용자의 결제 버튼 클릭 이벤트를 핸들링하여 페이팔 결제 요청을 초기화하는 로직 구현</li>
+                    </ul>
+                </li>
+                <li><span>PayPal SDK</span>
+                    <ul>
+                        <li>PayPal SDK를 이용하여 결제 요청 및 주문 정보 생성 처리</li>
+                        <li>사용자가 결제를 승인한 후에는 PayPal로부터 결제 승인 응답을 받아, 이를 토대로 자사의 주문 생성 로직 실행</li>
+                    </ul>
+                </li>
+                <li><span>PHP</span>
+                    <ul>
+                        <li>서버 사이드에서는 PHP를 사용하여 주문 데이터를 처리하고 데이터베이스에 저장하는 로직 구현</li>
+                        <li>PayPal로부터 결제 승인을 받으면, 이를 바탕으로 자사의 주문을 생성하고, 이후에 PayPal에 결제 승인 요청 전송</li>
+                        <li>최종적으로 결제가 완료되면 이 정보를 사용자에게 전달하고 데이터베이스에 저장</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="flow">
+            <h3>Flow</h3>
+            <div>
+                <img src="./images/paypal_flow.jpg" width="100%"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
